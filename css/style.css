@@ -14,8 +14,18 @@ body {
   margin: auto;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  paddig: 0;
+}
+
 img {
   max-width: 100%;
+}
+
+ul ol {
+  margin: 0;
+  padding: 0;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -507,7 +517,7 @@ template {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 13px;
   padding-bottom: 70px;
 }
 
@@ -529,7 +539,7 @@ template {
 }
 
 .hotel-info__description {
-  margin: 5px 0;
+  margin: 0;
 }
 
 .hotel-name {
@@ -560,10 +570,15 @@ template {
       flex-basis: 100%;
 }
 
+.stars__img {
+  margin-right: -2px;
+}
+
 .offer {
   font-size: 10px;
   line-height: 13px;
-  padding: 4px 9px;
+  font-weight: 600;
+  padding: 4px 10px;
   background-color: #EC1F46;
   border-radius: 3px;
   color: #fff;
@@ -581,11 +596,13 @@ template {
 .raiting__text {
   font-size: 8px;
   line-height: 10px;
+  font-weight: 600;
 }
 
 .raiting__counter {
   font-size: 14px;
   line-height: 18px;
+  font-weight: 700;
 }
 
 @media (max-width: 1200px) {
@@ -621,7 +638,7 @@ template {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .container {
     max-width: 576px;
     width: 92%;
