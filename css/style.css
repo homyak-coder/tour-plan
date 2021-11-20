@@ -605,6 +605,10 @@ template {
   font-weight: 700;
 }
 
+.raiting__small {
+  font-size: 10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
