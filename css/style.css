@@ -578,6 +578,12 @@ template {
   border-radius: 8px;
 }
 
+.hotel-slider__img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .hotel-slider::after {
   content: '';
   position: absolute;
