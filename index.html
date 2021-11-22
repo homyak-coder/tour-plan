@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Lobster&family=Mulish:wght@400;700&family=Nunito:wght@400;700;800&family=Open+Sans&family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -118,14 +119,43 @@
           <!-- /.hotel-info__text -->
           <div class="raiting hotel-info__raiting">
             <span class="raiting__text">User Rattings</span>
-            <span class="raiting__couner"
+            <span class="raiting__counter"
               >4.5/<span class="raiting__small">5</span></span
             >
           </div>
           <!-- /.hotel-info__right -->
         </div>
+        <div class="hotel-grid">
+          <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="img/slide.jpg" alt="slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slide.jpg" alt="slide" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slide.jpg" alt="slide" />
+                </div>
+              </div>
+
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button--prev"></button>
+              <button class="slider-button slider-button--next"></button>
+            </div>
+            <!-- ./swiper -->
+          </div>
+          <!-- /.slider -->
+        </div>
+        <!-- /.hotel-grid -->
       </div>
       <!-- /.container -->
     </section>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
