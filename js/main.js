@@ -8,6 +8,11 @@ const hotelSwiper = new Swiper('.hotel-slider', {
     prevEl: '.hotel-slider__button--prev',
   },
 
-  effect: "coverFlow"
+  effect: "coverFlow",
+
+  keyboard: {
+    enabled: true,
+    pageUpDown: true
+  }
 
 });
