@@ -1,11 +1,11 @@
-const swiper = new Swiper('.swiper', {
+const hotelSwiper = new Swiper('.hotel-slider', {
   // Optional parameters
   loop: true,
 
   // Navigation arrows
   navigation: {
-    nextEl: '.slider-button--next',
-    prevEl: '.slider-button--prev',
+    nextEl: '.hotel-slider__button--prev',
+    prevEl: '.hotel-slider__button--next',
   },
 
   effect: "coverFlow"
