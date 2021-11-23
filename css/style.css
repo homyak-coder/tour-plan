@@ -696,7 +696,7 @@ template {
   color: #fff;
   width: 350px;
   min-height: 210px;
-  padding: 28px;
+  padding: 28px 24px;
   background-color: #0A223D;
 }
 
@@ -975,13 +975,22 @@ template {
     padding-top: 0;
   }
   .hotel-slider {
-    height: 250px;
+    height: 180px;
   }
   .hotel__slider {
     margin-bottom: 20px;
   }
+  .hotel-right {
+    min-height: 403px;
+  }
+  .hotel-info {
+    margin-bottom: 20px;
+  }
   .stars {
     margin-right: 18px;
+  }
+  .map {
+    height: 172px;
   }
 }
 /*# sourceMappingURL=style.css.map */
