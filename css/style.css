@@ -656,6 +656,10 @@ template {
   margin-right: -2px;
 }
 
+.stars__img--reviews {
+  margin-right: 1px;
+}
+
 .offer {
   font-size: 10px;
   line-height: 13px;
@@ -817,6 +821,11 @@ template {
   overflow: hidden;
 }
 
+.map__yandex {
+  width: 347px;
+  height: 213px;
+}
+
 .newsletter {
   position: relative;
   padding: 92px 0 87px 0;
@@ -895,6 +904,8 @@ template {
 }
 
 .subscribe__button {
+  font-size: 12px;
+  line-height: 15px;
   position: absolute;
   min-width: 65px;
   right: 0;
@@ -914,7 +925,6 @@ template {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
-  margin-top: 30px;
   margin-bottom: 70px;
 }
 
@@ -931,10 +941,9 @@ template {
           align-items: center;
   background-color: #fff;
   border-radius: 8px;
-  margin-top: 45px;
-  max-width: 730px;
+  max-width: 731px;
   margin: 45px auto 0;
-  padding: 0 62px 30px;
+  padding: 0 62px 32px;
   position: relative;
 }
 
@@ -1115,6 +1124,12 @@ template {
     font-size: 14px;
     line-height: 18px;
   }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+    margin-top: 1px;
+    margin-bottom: 55px;
+  }
   .reviews-slider__item {
     max-width: 580px;
   }
@@ -1202,6 +1217,9 @@ template {
   .map {
     width: 100%;
   }
+  .map__yandex {
+    width: 100%;
+  }
   .newsletter-title {
     font-weight: 300;
     font-size: 20px;
@@ -1218,8 +1236,8 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 17px;
-    max-width: 280px;
-    width: 92%;
+    max-width: 500px;
+    width: 88%;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1232,6 +1250,13 @@ template {
     font-weight: 300;
     font-size: 14px;
     line-height: 18px;
+  }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .reviews-slider__avatar {
+    margin-bottom: 3px;
   }
   .reviews-slider__item {
     padding: 0 30px 30px;
@@ -1246,13 +1271,13 @@ template {
     left: 50%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    margin-left: -65px;
+    margin-left: -85px;
   }
   .reviews-slider__button--next {
     right: 50%;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
-    margin-right: -65px;
+    margin-right: -85px;
   }
 }
 
@@ -1295,6 +1320,13 @@ template {
   }
   .subscribe {
     width: 100%;
+  }
+  .reviews__title {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 245px;
   }
 }
 /*# sourceMappingURL=style.css.map */

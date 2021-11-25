@@ -28,6 +28,8 @@ const reviewsSwiper = new Swiper('.reviews-slider', {
 
   effect: "coverFlow",
 
+  autoHeight: 'true',
+
   keyboard: {
     enabled: true,
     pageUpDown: true
