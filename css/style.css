@@ -1324,6 +1324,7 @@ template {
     font-weight: 300;
     font-size: 20px;
     line-height: 25px;
+    margin-bottom: 15px;
   }
   .newsletter-title__strong {
     font-weight: 600;
@@ -1336,7 +1337,6 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
     padding-top: 17px;
-    max-width: 245px;
     width: 88%;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1388,6 +1388,9 @@ template {
   }
   .activities {
     padding: 40px 0 60px 0;
+  }
+  .activities__card {
+    width: 260px;
   }
   .activities__card--main {
     margin-bottom: 28px;
@@ -1445,7 +1448,9 @@ template {
     line-height: 23px;
     text-align: center;
     text-transform: uppercase;
-    max-width: 245px;
+  }
+  .card {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
