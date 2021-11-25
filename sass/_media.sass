@@ -8,6 +8,9 @@
       &__img
         height: 100%
         object-fit: cover
+  .card
+    width: 230px
+    height: 230px
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -59,6 +62,14 @@
     &-slider
       &__item
         max-width: 580px
+  .activities
+    &-wrapper
+      flex-wrap: wrap
+    &__card
+      margin-bottom: 20px
+  .card
+    width: 340px
+    height: 255px
 @media (max-width: 767px)
   .container
     max-width: 567px
@@ -124,7 +135,7 @@
     &-wrapper
       flex-direction: column
       padding-top: 17px
-      max-width: 500px
+      max-width: 245px
       width: 88%
       align-items: flex-start
   .subscribe
@@ -136,6 +147,7 @@
       font-size: 14px
       line-height: 18px
   .reviews
+    padding: 40px 0 50px 0
     &__title
       font-size: 30px
       line-height: 38px
@@ -156,6 +168,19 @@
           right: 50%
           transform: translate(50%, 0)
           margin-right: -85px
+  .card
+    height: 255px
+    width: 280px
+  .activities
+    padding: 40px 0 60px 0
+    &__card
+      &--main
+        margin-bottom: 28px
+    &__title
+      margin-bottom: 36px
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
 
 @media (max-width: 576px)
   .logo
