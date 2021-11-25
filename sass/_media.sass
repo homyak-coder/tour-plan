@@ -175,8 +175,6 @@
     padding: 40px 0 60px 0
     &__card
       width: 260px
-      &--main
-        margin-bottom: 28px
     &__title
       margin-bottom: 36px
       font-weight: bold
@@ -219,3 +217,17 @@
       text-transform: uppercase
   .card
     width: 100%
+    &__title
+      max-width: 200px
+    &:nth-child(1)
+      order: 1
+    &:nth-child(2)
+      order: 3
+    &:nth-child(3)
+      order: 2
+    &:nth-child(4)
+      order: 4
+  .activities
+    &__card
+      &--main
+        margin-bottom: 28px

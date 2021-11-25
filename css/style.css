@@ -1392,9 +1392,6 @@ template {
   .activities__card {
     width: 260px;
   }
-  .activities__card--main {
-    margin-bottom: 28px;
-  }
   .activities__title {
     margin-bottom: 36px;
     font-weight: bold;
@@ -1451,6 +1448,32 @@ template {
   }
   .card {
     width: 100%;
+  }
+  .card__title {
+    max-width: 200px;
+  }
+  .card:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .card:nth-child(2) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .card:nth-child(3) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .card:nth-child(4) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .activities__card--main {
+    margin-bottom: 28px;
   }
 }
 /*# sourceMappingURL=style.css.map */
