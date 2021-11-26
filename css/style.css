@@ -1213,6 +1213,9 @@ template {
     font-size: 14px;
     line-height: 18px;
   }
+  .reviews {
+    padding: 40px 0 60px 0;
+  }
   .reviews__title {
     font-size: 30px;
     line-height: 38px;
@@ -1232,6 +1235,9 @@ template {
   .card {
     width: 340px;
     height: 255px;
+  }
+  .card__title {
+    max-width: 200px;
   }
 }
 
