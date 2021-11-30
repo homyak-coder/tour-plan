@@ -28,6 +28,13 @@
       font-size: 14px
       line-height: 18px
       font-weight: 700
+    &__item
+      &--mobile
+        &_visible
+          display: none
+  &__user
+    flex-direction: column
+    justify-content: center
 .logo
   width: 177px
 .search
@@ -70,3 +77,8 @@
     line-height: 18px
     color: $text-color
     margin-left: 18px
+.navbar
+  &__user, &__search
+    &--mobile
+      &_visible
+        display: none
