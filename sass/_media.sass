@@ -150,20 +150,23 @@
     width: 92%
   .navbar
     &--mobile
-      &_fixed
-        position: fixed
-        left: 0
-        top: 0
-        right: 0
-        z-index: 99
+      position: fixed
+      left: 0
+      top: 0
+      right: 0
+      z-index: 99
     &__user, &__search
       &--mobile
-        &_hidden
+        &--hidden
           display: none
-        &_visible
+        &--visible
           display: flex
+    &__search
+      margin-left: auto
+      margin-right: auto
+      max-width: 243px
     &__user
-      font-display: column
+      flex-direction: column
       justify-content: center
     &-bottom
       display: none
@@ -179,8 +182,12 @@
       flex-direction: column
       &__item
         margin-bottom: 20px
+        &:first-child
+          margin-bottom: 27px
+        &:nth-child(2)
+          margin-bottom: 39px
         &--mobile
-          &_visible
+          &--visible
             display: block
   .menu
     &-button
@@ -323,7 +330,7 @@
       grid-column: span 2
     &__contact-details
       grid-row: 4 / 5
-      span 3
+      grid-column: span 3
     &__contact-form
       grid-row: 5 / 6
       grid-column: span 4
@@ -338,8 +345,17 @@
   .container
     width: 88%
   .navbar
+    &-menu
+      padding: 0 15px 22px 15px
+      &__item
+        font-weight: bold
+        font-size: 12px
+        line-height: 15px
     &-top
       padding-top: 23px
+    &-bottom
+      top: 71px
+      overflow-y: scroll
   .hotel
     padding-top: 0
     &-slider

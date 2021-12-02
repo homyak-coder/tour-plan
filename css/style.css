@@ -451,7 +451,7 @@ template {
   font-weight: 700;
 }
 
-.navbar-menu__item--mobile_visible {
+.navbar-menu__item--mobile--visible {
   display: none;
 }
 
@@ -517,7 +517,7 @@ template {
   margin-left: 18px;
 }
 
-.navbar__user--mobile_visible, .navbar__search--mobile_visible {
+.navbar__user--mobile--visible, .navbar__search--mobile--visible {
   display: none;
 }
 
@@ -1624,23 +1624,31 @@ template {
     max-width: 567px;
     width: 92%;
   }
-  .navbar--mobile_fixed {
+  .navbar--mobile {
     position: fixed;
     left: 0;
     top: 0;
     right: 0;
     z-index: 99;
   }
-  .navbar__user--mobile_hidden, .navbar__search--mobile_hidden {
+  .navbar__user--mobile--hidden, .navbar__search--mobile--hidden {
     display: none;
   }
-  .navbar__user--mobile_visible, .navbar__search--mobile_visible {
+  .navbar__user--mobile--visible, .navbar__search--mobile--visible {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+  .navbar__search {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 243px;
+  }
   .navbar__user {
-    font-display: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -1666,7 +1674,13 @@ template {
   .navbar-menu__item {
     margin-bottom: 20px;
   }
-  .navbar-menu__item--mobile_visible {
+  .navbar-menu__item:first-child {
+    margin-bottom: 27px;
+  }
+  .navbar-menu__item:nth-child(2) {
+    margin-bottom: 39px;
+  }
+  .navbar-menu__item--mobile--visible {
     display: block;
   }
   .menu-button {
@@ -1881,6 +1895,7 @@ template {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4 / 5;
+    grid-column: span 3;
   }
   .footer__contact-form {
     -ms-grid-row: 5;
@@ -1908,8 +1923,20 @@ template {
   .container {
     width: 88%;
   }
+  .navbar-menu {
+    padding: 0 15px 22px 15px;
+  }
+  .navbar-menu__item {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+  }
   .navbar-top {
     padding-top: 23px;
+  }
+  .navbar-bottom {
+    top: 71px;
+    overflow-y: scroll;
   }
   .hotel {
     padding-top: 0;
