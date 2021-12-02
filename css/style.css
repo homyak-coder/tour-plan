@@ -1308,6 +1308,12 @@ template {
   line-height: 160%;
 }
 
+.footer__text-span {
+  font-size: 14px;
+  line-height: 160%;
+  color: #BDBDBD;
+}
+
 .footer__link {
   text-decoration: none;
   color: inherit;
@@ -1654,6 +1660,7 @@ template {
             justify-content: center;
   }
   .navbar-bottom {
+    overflow-y: scroll;
     display: none;
     position: fixed;
     left: 0;
