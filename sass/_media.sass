@@ -14,6 +14,18 @@
   .footer
     &__input
       flex-basis: 100%
+  .modal
+    &__dialog
+      width: 400px
+      height: 400px
+      padding: 13px 58px
+    &__input
+      height: 40px
+    &__message
+      min-height: 75px
+  .message
+    height: 85px
+
 @media (max-width: 992px)
   .container,
   .newsletter-wrapper
@@ -340,6 +352,20 @@
     &__pay-icons
       grid-row: 6 / 7
       margin-top: 30px
+  .modal
+    &__dialog
+      width: 350px
+      height: 350px
+      padding: 13px 58px
+    &__input
+      height: 30px
+      margin-bottom: 10px
+    &__message
+      min-height: 55px
+    &__button
+      margin-bottom: 10px
+  .message
+    height: 65px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -483,3 +509,21 @@
     &__img-icons
       margin-top: -12px
       margin-right: 143px
+  .modal
+    &__dialog
+      width: 270px
+      height: 270px
+      padding: 13px 58px
+    &__input
+      height: 25px
+      margin-bottom: 10px
+    &__message
+      min-height: 15px
+    &__button
+      margin-bottom: 10px
+      min-height: 20px
+      padding: 6px
+      width: 100%
+      min-width: 154px
+  .message
+    height: 36px

@@ -1544,6 +1544,20 @@ template {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .modal__dialog {
+    width: 400px;
+    height: 400px;
+    padding: 13px 58px;
+  }
+  .modal__input {
+    height: 40px;
+  }
+  .modal__message {
+    min-height: 75px;
+  }
+  .message {
+    height: 85px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -2033,6 +2047,24 @@ template {
     grid-row: 6 / 7;
     margin-top: 30px;
   }
+  .modal__dialog {
+    width: 350px;
+    height: 350px;
+    padding: 13px 58px;
+  }
+  .modal__input {
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  .modal__message {
+    min-height: 55px;
+  }
+  .modal__button {
+    margin-bottom: 10px;
+  }
+  .message {
+    height: 65px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -2275,6 +2307,28 @@ template {
   .footer__img-icons {
     margin-top: -12px;
     margin-right: 143px;
+  }
+  .modal__dialog {
+    width: 270px;
+    height: 270px;
+    padding: 13px 58px;
+  }
+  .modal__input {
+    height: 25px;
+    margin-bottom: 10px;
+  }
+  .modal__message {
+    min-height: 15px;
+  }
+  .modal__button {
+    margin-bottom: 10px;
+    min-height: 20px;
+    padding: 6px;
+    width: 100%;
+    min-width: 154px;
+  }
+  .message {
+    height: 36px;
   }
 }
 /*# sourceMappingURL=style.css.map */
