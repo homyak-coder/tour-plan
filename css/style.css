@@ -60,6 +60,7 @@ input::placeholder, textarea::placeholder {
   height: 50px;
   font-size: 12px;
   line-height: 15px;
+  outline: 0;
 }
 
 .message {
@@ -70,6 +71,7 @@ input::placeholder, textarea::placeholder {
   padding: 18px 23px;
   border: none;
   resize: none;
+  outline: 0;
 }
 
 .button {
@@ -1377,6 +1379,11 @@ template {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  outline: 0;
+}
+
+.footer__button--thank {
+  margin-left: 300px;
 }
 
 .footer__info {
@@ -1545,8 +1552,8 @@ template {
         flex-basis: 100%;
   }
   .modal__dialog {
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     padding: 13px 58px;
   }
   .modal__input {
@@ -1554,9 +1561,6 @@ template {
   }
   .modal__message {
     min-height: 75px;
-  }
-  .message {
-    height: 85px;
   }
 }
 
@@ -1662,6 +1666,11 @@ template {
   }
   .footer__title--inline {
     margin-left: -30px;
+  }
+  .footer__button--thank {
+    margin-left: 100px;
+    padding: 0;
+    height: 50px;
   }
   .footer-wrapper {
     -ms-grid-columns: (1fr)[6];
@@ -2011,6 +2020,11 @@ template {
   .footer__social-links {
     margin-left: 30px;
   }
+  .footer__button--thank {
+    margin: 0;
+    min-height: 30px;
+    padding: 0;
+  }
   .footer__legal {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
@@ -2051,6 +2065,8 @@ template {
     width: 350px;
     height: 350px;
     padding: 13px 58px;
+    overflow-y: auto;
+    top: 45%;
   }
   .modal__input {
     height: 30px;
@@ -2061,9 +2077,6 @@ template {
   }
   .modal__button {
     margin-bottom: 10px;
-  }
-  .message {
-    height: 65px;
   }
 }
 
@@ -2252,6 +2265,10 @@ template {
         -ms-flex-order: 1;
             order: 1;
   }
+  .footer__button--thank {
+    max-height: 20px;
+    padding: 0;
+  }
   .footer__message {
     margin-bottom: 16px;
   }
@@ -2312,13 +2329,16 @@ template {
     width: 270px;
     height: 270px;
     padding: 13px 58px;
+    top: 40%;
   }
   .modal__input {
     height: 25px;
     margin-bottom: 10px;
+    padding: 3px;
   }
   .modal__message {
     min-height: 15px;
+    padding: 3px;
   }
   .modal__button {
     margin-bottom: 10px;
@@ -2326,9 +2346,6 @@ template {
     padding: 6px;
     width: 100%;
     min-width: 154px;
-  }
-  .message {
-    height: 36px;
   }
 }
 /*# sourceMappingURL=style.css.map */

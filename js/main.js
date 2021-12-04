@@ -63,4 +63,16 @@ closeModalButton.on('click', closeModal)
     modalDialog.removeClass("modal__dialog--visible")
   }
 
+$(".modal__dialog").on('click', function() {
+$(this).toggleClass("on");
+$('.menu-section').toggleClass("on");
+$("nav ul").toggleClass('hidden');  
+});
+
+$(document).keyup(function(e) {
+     if (e.keyCode == 27) { // escape key maps to keycode `27`
+       if (!$("nav ul").hasClass("hidden")) {$("nav ul").toggleClass("hidden")}
+    }
+});
+$('#modal_id').modal({ backdrop: 'static', keyboard: false });
 });

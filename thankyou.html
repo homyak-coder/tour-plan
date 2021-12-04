@@ -17,7 +17,7 @@
     <header class="navbar navbar--mobile">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <img
               src="img/horizontal_logo.svg"
               alt="Logo: Best Tour Plan"
@@ -133,10 +133,18 @@
         <div class="hotel-info">
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
-              <h1 class="hotel-name hotel-info__name">Сообщение отправлено!</h1>
+              <h1 class="hotel-name hotel-info__name">Message sent!</h1>
+              <a href="index.html" class="thank-link">
+                <button
+                  class="footer__button footer__button--thank"
+                  type="submit"
+                >
+                  Go to the first page
+                </button>
+              </a>
             </div>
             <p class="hotel-description hotel-info__description">
-              Наш менеджер позвонит вам через 5 минут
+              Our manager will call you in 5 minutes
             </p>
           </div>
           <!-- /.hotel-info__text -->
@@ -147,11 +155,9 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
-            src="img/vertical-logo.svg"
-            alt="Logo: Best Tour Plan"
-            class="logo footer__logo"
-          />
+          <a href="index.html" class="logo footer__logo">
+            <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
+          </a>
           <div
             class="footer__list footer__categories footer__categories--992px"
           >
@@ -321,7 +327,7 @@
                 name="phone"
               />
               <textarea
-                class="footer__message"
+                class="message footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>

@@ -406,7 +406,7 @@
               class="card__image"
             />
             <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -416,7 +416,7 @@
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card activities__card--main">
@@ -428,7 +428,7 @@
             <h3 class="card__title">
               Tamarind falls hiking trip&nbsp;-&nbsp;full day
             </h3>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
           <div class="card activities__card">
@@ -438,7 +438,7 @@
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
         </div>
@@ -450,11 +450,12 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
+        <a href="#" class="logo footer__logo">
           <img
             src="img/vertical-logo.svg"
             alt="Logo: Best Tour Plan"
-            class="logo footer__logo"
           />
+        </a>
           <div
             class="footer__list footer__categories footer__categories--992px"
           >
@@ -653,7 +654,7 @@
     <div class="modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
-      <div class="modal__dialog">
+      <div class="modal__dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false" id="modal_id">
         <a href="#" class="modal__close"
           ><img src="img/close.svg" alt="icon: close"
         /></a>
@@ -675,6 +676,7 @@
             type="text"
             class="input modal__input"
             placeholder="Email*"
+            name="email"
           />
           <textarea
             class=" message modal__message"
