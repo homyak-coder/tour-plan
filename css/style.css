@@ -982,6 +982,7 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #fff;
+  cursor: pointer;
 }
 
 .reviews {

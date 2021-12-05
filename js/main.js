@@ -52,15 +52,17 @@ closeModalButton.on('click', closeModal)
   function openModal() {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
-    modalOverlay.addClass("modal__overlay--visible")
-    modalDialog.addClass("modal__dialog--visible")
+    modalOverlay.addClass("modal__overlay--visible");
+    modalDialog.addClass("modal__dialog--visible");
+    $('body').css('overflow', 'hidden');
   }
   function closeModal(event) {
     event.preventDefault();
+    $('body').css('overflow', 'auto');
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
-    modalOverlay.removeClass("modal__overlay--visible")
-    modalDialog.removeClass("modal__dialog--visible")
+    modalOverlay.removeClass("modal__overlay--visible");
+    modalDialog.removeClass("modal__dialog--visible");
   }
 
 $(".modal__dialog").on('click', function() {
@@ -71,8 +73,11 @@ $("nav ul").toggleClass('hidden');
 
 $(document).keyup(function(e) {
      if (e.keyCode == 27) { // escape key maps to keycode `27`
-       if (!$("nav ul").hasClass("hidden")) {$("nav ul").toggleClass("hidden")}
-    }
+      var modalOverlay = $(".modal__overlay");
+      var modalDialog = $(".modal__dialog");
+      modalOverlay.removeClass("modal__overlay--visible");
+      modalDialog.removeClass("modal__dialog--visible");
+      }
 });
-$('#modal_id').modal({ backdrop: 'static', keyboard: false });
+
 });
