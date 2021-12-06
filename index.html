@@ -655,7 +655,7 @@
     <div class="modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
-      <div class="modal__dialog" data-backdrop="static" data-keyboard="false" id="modal_id">
+      <div class="modal__dialog">
         <a href="#" class="modal__close"
           ><img src="img/close.svg" alt="icon: close"
         /></a>
@@ -666,18 +666,21 @@
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
+            required
           />
           <input
             type="text"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
+            required
           />
           <input
             type="text"
             class="input modal__input"
             placeholder="Email*"
             name="email"
+            required
           />
           <textarea
             class=" message modal__message"
@@ -694,6 +697,7 @@
     <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js" ></script>
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
