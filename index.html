@@ -669,15 +669,18 @@
         /></a>
         <h3 class="modal__title modal__title--mb-1">Booking</h3>
         <form action="send.php" method="POST" class="modal__form form">
-          <input
-            type="text"
-            class="input modal__input"
-            placeholder="Your Full Name*"
-            name="name"
-            required
-            minlength="2"
-          />
-          <input
+          <div class="modal__input-group">
+            <input
+              type="text"
+              class="input modal__input"
+              placeholder="Your Full Name*"
+              name="name"
+              required
+              minlength="2"
+            />
+          </div>
+          <div class="modal__input-group">
+            <input
             type="tel"
             class="input modal__input"
             id="phone"
@@ -685,13 +688,16 @@
             name="phone"
             required
           />
-          <input
+          </div>
+          <div class="modal__input-group">
+            <input
             type="email"
             class="input modal__input"
             placeholder="Email*"
             name="email"
             required
           />
+          </div>
           <textarea
             class=" message modal__message"
             placeholder="Message"
