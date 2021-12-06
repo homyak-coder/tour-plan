@@ -960,6 +960,7 @@ template {
   width: 350px;
   height: 55px;
   border-radius: 4px;
+  overflow: hidden;
 }
 
 .subscribe__input {
@@ -972,7 +973,6 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-  overflow: hidden;
 }
 
 .subscribe__button {
@@ -987,7 +987,6 @@ template {
   background-color: #EC1F46;
   color: #fff;
   cursor: pointer;
-  overflow: hidden;
 }
 
 .reviews {
@@ -1361,10 +1360,6 @@ template {
   color: inherit;
 }
 
-.footer__input {
-  width: 100%;
-}
-
 .footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
@@ -1558,13 +1553,13 @@ template {
     width: 230px;
     height: 230px;
   }
-  .footer__input-group {
+  .footer__input {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
   .modal__dialog {
     width: 450px;
-    height: 500px;
+    height: 450px;
     padding: 13px 58px;
   }
   .modal__input {
@@ -1688,7 +1683,7 @@ template {
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
   }
-  .footer__input-group {
+  .footer__input {
     -ms-flex-preferred-size: 47%;
         flex-basis: 47%;
   }
@@ -2079,7 +2074,7 @@ template {
     overflow-y: auto;
     top: 45%;
   }
-  .modal__input-group {
+  .modal__input {
     height: 30px;
     margin-bottom: 10px;
   }

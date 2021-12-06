@@ -13,11 +13,12 @@
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
   .modal
     &__dialog
       width: 450px
-      height: 450px
+      height: 500px
       padding: 13px 58px
     &__input
       height: 40px
@@ -107,7 +108,8 @@
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
     &__input
-      flex-basis: 47%
+      &-group
+        flex-basis: 47%
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -368,12 +370,14 @@
       overflow-y: auto
       top: 45%
     &__input
-      height: 30px
-      margin-bottom: 10px
+      &-group
+        height: 30px
+        margin-bottom: 10px
     &__message
       min-height: 55px
     &__button
       margin-bottom: 10px
+      min-width: 130px
 @media (max-width: 576px)
   .logo
     width: 99px

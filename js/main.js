@@ -81,18 +81,22 @@ $(document).keyup(function(e) {
 });
 
 // Обработка формы
-  $(".footer__form").validate({ messages: {
-    name: {
-      required: "Please specify your name",
-      minlength: "Name's length must be bigger than 2",
-    },
-    email: {
-      required: "We need your email address to contact you",
-      email: "Your email address must be in the format of name@domain.com"
-    },
-    phone: {
-      required: "Телефон обязателен",
-    }
-  }});
+  $(".form").each(function() {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Name's length must be bigger than 2",
+      },
+        email: {
+          required: "We need your email address",
+          email: "Your email address must be in the format of name@domain.com"
+      },
+        phone: {
+          required: "You must enter number",
+      }
+    }})
+  })
 
 });
