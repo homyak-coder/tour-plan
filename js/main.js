@@ -97,6 +97,11 @@ $(document).keyup(function(e) {
           required: "You must enter number",
       }
     }})
-  })
+  });
+
+$(document).ready(function(){
+  $('#phone').mask('+7 (999)-99-99');
+  $('#phone-1').mask('+7 (999)-99-99');
+});
 
 });

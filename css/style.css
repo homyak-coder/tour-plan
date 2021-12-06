@@ -957,6 +957,7 @@ template {
 
 .subscribe {
   position: relative;
+  overflow: hidden;
   width: 350px;
   height: 55px;
   border-radius: 4px;
@@ -972,7 +973,6 @@ template {
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
-  overflow: hidden;
 }
 
 .subscribe__button {
@@ -987,7 +987,6 @@ template {
   background-color: #EC1F46;
   color: #fff;
   cursor: pointer;
-  overflow: hidden;
 }
 
 .reviews {
