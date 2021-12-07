@@ -104,4 +104,6 @@ $(document).ready(function(){
   $('#phone-1').mask('+7 (999)-99-99');
 });
 
+AOS.init();
+
 });
