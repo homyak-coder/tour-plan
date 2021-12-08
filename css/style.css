@@ -2097,9 +2097,6 @@ label.invalid {
     overflow-y: auto;
     top: 45%;
   }
-  .modal__input-group {
-    margin-bottom: 10px;
-  }
   .modal__message {
     min-height: 55px;
   }
