@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/aos.css" />
+    <link rel="shortcut icon" href="img/tour.ico" type="image/x-icon" />
   </head>
 
   <body>
@@ -30,7 +31,7 @@
             data-aos="fade-right"
             data-aos-delay="200"
             action="#"
-            class="search navbar__search navbar__search--mobile--hidden"          
+            class="search navbar__search navbar__search--mobile--hidden"
           >
             <input
               type="text"
@@ -41,7 +42,12 @@
               <img src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
-          <a href="#" class="user navbar__user navbar__user--mobile--hidden" data-aos="fade-right" data-aos-delay="300">
+          <a
+            href="#"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             <img
               src="img/user-avatar.jpeg"
               alt="avatar: Nathan"
@@ -255,7 +261,9 @@
                 </a>
               </div>
               <!-- /.booking__call-center -->
-              <button data-toggle="modal" class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" class="button booking__button">
+                View Other Options
+              </button>
             </div>
             <!-- /.booking-->
             <div class="map">
@@ -281,12 +289,16 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe form"
+        >
           <input
             type="email"
             class="subscribe__input"
             placeholder="Your email address"
-            name = "email"
+            name="email"
             required
           />
           <button class="subscribe__button">Send</button>
@@ -404,7 +416,11 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card" data-aos="fade-up" data-aos-delay="100">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -414,7 +430,11 @@
             <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card" data-aos="fade-up" data-aos-delay="300">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf course"
@@ -424,7 +444,11 @@
             <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card activities__card--main" data-aos="fade-up" data-aos-delay="500">
+          <div
+            class="card activities__card activities__card--main"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hikin trip - full day"
@@ -436,7 +460,11 @@
             <button class="card__button" data-toggle="modal">Book Now</button>
           </div>
           <!-- /.card -->
-          <div class="card activities__card" data-aos="fade-up" data-aos-delay="700">
+          <div
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery quest"
@@ -455,12 +483,9 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-        <a href="#" class="logo footer__logo">
-          <img
-            src="img/vertical-logo.svg"
-            alt="Logo: Best Tour Plan"
-          />
-        </a>
+          <a href="#" class="logo footer__logo">
+            <img src="img/vertical-logo.svg" alt="Logo: Best Tour Plan" />
+          </a>
           <div
             class="footer__list footer__categories footer__categories--992px"
           >
@@ -619,24 +644,24 @@
             <form action="send.php" method="POST" class="footer__form form">
               <div class="footer__input-group">
                 <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-                required
-                minlength="2"
-              />
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="2"
+                />
               </div>
               <div class="footer__input-group">
                 <input
-                type="tel"
-                id="phone-1"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-                required
-                minlength="18"
-              />
+                  type="tel"
+                  id="phone-1"
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                  minlength="18"
+                />
               </div>
               <textarea
                 class="message footer__message"
@@ -686,26 +711,26 @@
           </div>
           <div class="modal__input-group">
             <input
-            type="tel"
-            class="input modal__input"
-            id="phone"
-            placeholder="Phone Number*"
-            name="phone"
-            required
-            minlength="18"
-          />
+              type="tel"
+              class="input modal__input"
+              id="phone"
+              placeholder="Phone Number*"
+              name="phone"
+              required
+              minlength="18"
+            />
           </div>
           <div class="modal__input-group">
             <input
-            type="email"
-            class="input modal__input"
-            placeholder="Email*"
-            name="email"
-            required
-          />
+              type="email"
+              class="input modal__input"
+              placeholder="Email*"
+              name="email"
+              required
+            />
           </div>
           <textarea
-            class=" message modal__message"
+            class="message modal__message"
             placeholder="Message"
             name="message"
           ></textarea>
@@ -713,11 +738,10 @@
           <span class="modal__info">* Required Fields</span>
         </form>
       </div>
-    </div>
       <!-- /.model__dialog -->
     </div>
     <!-- /.modal -->
-    <script src="js/jquery-3.6.0.min.js" ></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
