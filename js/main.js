@@ -104,6 +104,11 @@ $(document).ready(function(){
   $('#phone-1').mask('+7 (999) 999-99-99');
 });
 
-AOS.init();
+AOS.init({
+  disable: function() {
+    var maxWidth = 992;
+    return window.innerWidth < maxWidth;
+  }
+});
 
 });

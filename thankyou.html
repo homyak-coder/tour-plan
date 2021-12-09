@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="img/tour.ico" type="image/x-icon" />
   </head>
 
   <body>
@@ -134,11 +135,11 @@
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
               <h1 class="hotel-name hotel-info__name">Message sent!</h1>
-              <a href="index.html" class="thank-link">
-                <button class="thank-button thank-button-thank" type="submit">
+              <form action="index.html" target="_blank">
+                <button class="thank-button thank-button_thank">
                   Go to the first page
                 </button>
-              </a>
+              </form>
             </div>
             <p class="hotel-description hotel-info__description">
               Our manager will call you in 5 minutes
@@ -310,19 +311,28 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-1">Send us a message</h3>
-            <form action="send.php" method="post" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-group">
+                <input
+                  type="text"
+                  class="input footer__input"
+                  placeholder="Your Full Name*"
+                  name="name"
+                  required
+                  minlength="2"
+                />
+              </div>
+              <div class="footer__input-group">
+                <input
+                  type="tel"
+                  id="phone-1"
+                  class="input footer__input"
+                  placeholder="Phone Number*"
+                  name="phone"
+                  required
+                  minlength="18"
+                />
+              </div>
               <textarea
                 class="message footer__message"
                 placeholder="Message"
@@ -331,8 +341,8 @@
               <button class="footer__button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
+            <!-- /.footer__contact-form -->
           </div>
-          <!-- /.footer__contact-form -->
           <div class="footer__documents">
             <span class="footer__docs">Disclaimer</span
             ><span class="footer__docs">Conditions of use</span
@@ -350,6 +360,8 @@
       </div>
       <!-- /.container -->
     </footer>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
