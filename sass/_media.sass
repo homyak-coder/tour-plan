@@ -18,12 +18,14 @@
   .modal
     &__dialog
       width: 450px
-      height: 450px
+      max-height: 90%
       padding: 13px 58px
     &__input
       height: 40px
     &__message
       min-height: 75px
+    &__info
+      margin-left: 70px
 
 @media (max-width: 992px)
   .container,
@@ -111,17 +113,12 @@
         margin-top: 20px
       &--inline
         margin-left: -30px
-    &__button
-      &_thank
-        margin-left: 100px
-        padding: 0
-        height: 50px
   .thank
     &-button
-      &-thank
-        margin-left: 0
+      display: block
+      &_thank
         padding: 0
-        height: 50px
+        max-height: 30px
   .footer
     &__text
       margin-bottom: 21px
@@ -389,10 +386,10 @@
   .modal
     &__dialog
       width: 350px
-      height: 350px
+      max-height: 90%
       padding: 13px 58px
       overflow-y: auto
-      top: 45%
+      top: 50%
     &__input
       &-group
         // height: 30px
@@ -402,6 +399,12 @@
     &__button
       margin-bottom: 10px
       min-width: 130px
+    &__info
+      margin-left: 2px
+  .thank
+    &-button
+      &_thank
+        margin-left: 0
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -424,6 +427,12 @@
     padding-bottom: 40px
     &-slider
       height: 180px
+      &__button
+        background-size: 4px
+        &--prev
+          left: -2px
+        &--next
+          right: -2px
     &__slider
       margin-bottom: 20px
     &-right
@@ -432,9 +441,6 @@
       margin-bottom: 20px
   .stars
     margin-right: 16px
-    &__img
-      &--reviews
-
   .breadcrumb
     &-list
       padding: 14px 0
@@ -540,9 +546,6 @@
       margin-left: 0
     &__button
       order: 1
-      &--thank
-        max-height: 20px
-        padding: 0
     &__input
       &-group
         flex-basis: 100%
@@ -577,12 +580,11 @@
   .modal
     &__dialog
       width: 270px
-      height: 270px
-      padding: 13px 58px
-      top: 40%
+      max-height: 90%
+      padding: 30px 25px
+      top: 50%
     &__input
       height: 25px
-      margin-bottom: 10px
       padding: 3px
     &__message
       min-height: 15px
@@ -593,6 +595,13 @@
       padding: 6px
       width: 100%
       min-width: 154px
+  .thank
+    &-button
+      &_thank
+        display: block
+        margin-left: 0
+        max-height: 30px
+        padding: 0
 .invalid
   font-size: 10px
 @media (min-width: 992px)
@@ -602,19 +611,27 @@
   .footer__button:hover
     color: green
     background-color: blue
+    transition: 1s
   .card__button:hover
     background-color: blue
+    transition: 1s
   .subscribe__button:hover
     background-color: blue
+    transition: 1s
   .booking__button:hover
     background-color: blue
+    transition: 1s
   .booking__number:hover
     color: blue
+    transition: 1s
   .navbar-menu__link:hover
     color: blue
+    transition: 1s
   .search__button:hover
     background-color: blue
-  .navbar__user:hover
-    background-color: pink
-  .logo:hover
-    background-color: pink
+    transition: 1s
+  .thank-button:hover
+    background-color: blue
+    transition: 1s
+  .footer__docs:hover
+    color: blue

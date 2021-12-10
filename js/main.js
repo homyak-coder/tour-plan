@@ -14,9 +14,12 @@ $(document).ready(function () {
   keyboard: {
     enabled: true,
     pageUpDown: true
-  }
+  }, 
+
+  allowTouchMove: 'true'
 
 });
+
 const reviewsSwiper = new Swiper('.reviews-slider', {
   // Optional parameters
   loop: true,
@@ -29,12 +32,12 @@ const reviewsSwiper = new Swiper('.reviews-slider', {
 
   effect: "coverFlow",
 
-  autoHeight: 'true',
-
   keyboard: {
     enabled: true,
     pageUpDown: true
-  }
+  },
+
+  allowTouchMove: 'true'
 
 });
 
